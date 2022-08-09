@@ -1,7 +1,7 @@
 import React, {useState,useRef} from 'react';
 import { makeStyles, TextField, Button} from '@material-ui/core';
 import QRCode from 'qrcode';
-import {CardContent, Grid, Container} from '@material-ui/core';
+import { Grid, Container} from '@material-ui/core';
 import QrReader from 'react-qr-reader';
 
 

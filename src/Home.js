@@ -4,21 +4,34 @@ import { Grid, CardContent, Container, Card} from '@material-ui/core';
 import QrReader from 'react-qr-reader';
 import { Link } from 'react-router-dom';
 import { makeStyles} from '@material-ui/core';
+import SearchBar from "material-ui-search-bar";
 
 
 
 const Home = () => {
     const classes = useStyles();
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
+    const [state, setState] =  useState({
+      value:""
+    });
+    
+
+    //dummy function for now
+    const handleSearch = (newValue) => {
+      setState({ value: newValue })
+    }
+     
+    
 
     const handleErrorWebCam = (error) => {
         console.log(error);
-      }
-      const handleScanWebCam = (result) => {
+    }
+    
+    const handleScanWebCam = (result) => {
         if (result){
             setScanResultWebCam(result);
         }
-       }
+    }
 
 
     return ( 
@@ -42,6 +55,11 @@ const Home = () => {
                 <Link to="/map">Map</Link>
                 <Link to="/move">Move</Link>
                 </Grid>
+                <SearchBar
+    value={state.value}
+    onChange={(newValue) => setState({ value: newValue })}
+    onRequestSearch={() => handleSearch(state.value)}
+  />
                 
                 </Grid>
 

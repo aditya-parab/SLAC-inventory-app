@@ -17,10 +17,10 @@ function App() {
   return (
     <Router>
  <Container className={classes.container}>
-          <Card>
+        
            
-              <CardContent>
-                  <Grid  container spacing={2}  >
+             
+           
 
                   <Switch>
                       <Route exact path="/"> <Home></Home>  </Route>
@@ -33,9 +33,8 @@ function App() {
                   
                      </Switch>
 
-                  </Grid>
-              </CardContent>
-          </Card>
+               
+       
     </Container>
     </Router>
    
