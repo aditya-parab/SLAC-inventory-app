@@ -1,61 +1,54 @@
-import React, {useState, useRef} from 'react';
-import {Container, Card, CardContent, makeStyles, Grid, TextField, Button} from '@material-ui/core';
-import QRCode from 'qrcode';
-import QrReader from 'react-qr-reader';
+import {createTheme, ThemeProvider} from '@material-ui/core';
 import QRGENSCEN from './QRGENSCAN';
 import Home from './Home';
+import ScanItem from './ScanItem';
+import ScanLocation from './ScanLocation'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+const theme = createTheme(
+{
+  palette: {
+  }
+}
+)
 
 
 function App() { 
 
-;
-  const classes = useStyles();
-  
+
 
 
   return (
-    <Router>
- <Container className={classes.container}>
-        
-           
-             
-           
 
-                  <Switch>
-                      <Route exact path="/"> <Home></Home>  </Route>
-                    
-                     </Switch>  
+    <ThemeProvider theme={theme}>
+  <Router>
+
+  <Switch>
+    <Route path="/scanitem"> <ScanItem></ScanItem>  </Route>
+   </Switch>
+
+   <Switch>
+    <Route path="/scanlocation"> <ScanLocation/>  </Route>
+   </Switch>
 
 
-                     <Switch>
-                      <Route  path="/generate">   <QRGENSCEN></QRGENSCEN>  </Route>
-                  
-                     </Switch>
+   <Switch>
+    <Route  path="/generate">   <QRGENSCEN></QRGENSCEN>  </Route>
+   </Switch>
 
-               
-       
-    </Container>
-    </Router>
+   <Switch>
+    <Route exact path="/" > <Home></Home>  </Route>
+   </Switch>  
+
+
+
+
+</Router>
+    </ThemeProvider>
+  
    
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-      marginTop: 10
-    },
-    title: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems:  'center',
-      background: '#90030B',
-      color: '#fff',
-      padding: 20
-    },
-    btn : {
-      marginTop: 10,
-      marginBottom: 20
-    }
-}));
+
 export default App;
