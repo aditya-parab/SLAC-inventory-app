@@ -3,6 +3,7 @@ import QRGENSCEN from './QRGENSCAN';
 import Home from './Home';
 import ScanItem from './ScanItem';
 import ScanLocation from './ScanLocation'
+import Success from './Success';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const theme = createTheme(
@@ -34,6 +35,10 @@ function App() {
 
    <Switch>
     <Route  path="/generate">   <QRGENSCEN></QRGENSCEN>  </Route>
+        </Switch>
+        
+        <Switch>
+    <Route  path="/success">   <Success/> </Route>
    </Switch>
 
    <Switch>

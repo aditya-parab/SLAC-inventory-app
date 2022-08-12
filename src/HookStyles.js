@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 const UseStyle = makeStyles({ container: {
     marginTop: 10
   },
-  title: {
+  titlename: {
     display: 'flex',
     justifyContent: 'center',
     alignItems:  'center',
