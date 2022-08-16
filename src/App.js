@@ -4,6 +4,7 @@ import Home from './Home';
 import ScanItem from './ScanItem';
 import ScanLocation from './ScanLocation'
 import Success from './Success';
+import AddNewItem from './AddNewItem';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const theme = createTheme(
@@ -30,6 +31,11 @@ function App() {
 
    <Switch>
     <Route path="/scanlocation"> <ScanLocation/>  </Route>
+        </Switch>
+           
+        
+    <Switch>
+    <Route path="/addnewitem"> <AddNewItem></AddNewItem>  </Route>
    </Switch>
 
 

@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { UseStyle } from './HookStyles';
+// import { UseStyle } from './HookStyles';
 import { Grid } from '@material-ui/core';
 import {Typography, IconButton} from '@material-ui/core';
 import QrReader from 'react-qr-reader';
@@ -9,7 +9,7 @@ import {Button} from '@material-ui/core';
 
 
 const ScanItem = () => {
-    const classes = UseStyle();
+    // const classes = UseStyle();
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
 
     const handleErrorWebCam = (error) => {
@@ -35,7 +35,7 @@ const ScanItem = () => {
 
             <Grid item xl={4} lg={4} md={8} sm={12} xs={12} >
                 <Typography 
-                className={classes.btn} 
+                /*className={classes.btn}*/
                 variant="h3">
                     Scan the item you want to move
                 </Typography>

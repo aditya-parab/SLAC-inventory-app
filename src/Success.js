@@ -1,8 +1,7 @@
-import { Card, CardHeader,CardMedia,CardContent } from "@material-ui/core";
+import { Card, CardHeader,CardContent } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
-import { UseStyle } from "./HookStyles";
 import { Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle"
 
 
@@ -10,18 +9,8 @@ import CheckCircleIcon from "@material-ui/icons/CheckCircle"
 
 
 const Success = () => {
-    const classes = {
-        titlename: {
-        
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems:  'center',
-    background: '#90030B',
-    color: '#fff',
-    padding: 20    
-        }
-        
-    }
+    const classes = useStyles()
+
 
     const tempstyle = {
         largeicon: {
@@ -53,5 +42,25 @@ const Success = () => {
 
      );
 }
+
+const useStyles = makeStyles((theme) => ({
+    container: {
+      marginTop: 10
+    },
+    title: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems:  'center',
+     background: '#90030B',
+      color: '#fff',
+      padding: 20
+    },
+    btn : {
+      marginTop: 10,
+      marginBottom: 20,
+      color:"white",
+      background: '#90030B',
+    }
+}));
  
 export default Success;

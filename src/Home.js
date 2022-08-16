@@ -2,7 +2,8 @@
 import React, {useState} from 'react';
 import { Button, Grid,Typography} from '@material-ui/core';
 import QrReader from 'react-qr-reader';
-import { UseStyle } from './HookStyles';
+
+import {makeStyles} from '@material-ui/core';
 import SearchBar from "material-ui-search-bar"; 
 import MoveIcon from '@material-ui/icons/ZoomOutMap';
 import MapIcon from '@material-ui/icons/Map';
@@ -12,7 +13,8 @@ import MapIcon from '@material-ui/icons/Map';
 
 
 const Home = () => {
-    const classes = UseStyle();
+  const classes = useStyles()
+  
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
     const [state, setState] =  useState({
       value:""
@@ -60,11 +62,11 @@ const Home = () => {
                 />
 
 
-                <Button className="btn" 
+                {/* <Button className="btn" 
                 variant="contained"  
                 href="/generate">
                   Generate
-                  </Button>
+                  </Button> */}
                
                 <Button 
                 variant="contained"
@@ -97,6 +99,25 @@ const Home = () => {
      );
 }
 
-
+const useStyles = makeStyles((theme) => ({
+    container: {
+    marginTop: 10,
+      textAlign:"center"
+    },
+    title: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems:  'center',
+     background: '#90030B',
+      color: '#fff',
+      padding: 20
+    },
+    btn : {
+      marginTop: 10,
+      marginBottom: 20,
+      color:"white",
+      background: '#90030B',
+    }
+}));
  
 export default Home;

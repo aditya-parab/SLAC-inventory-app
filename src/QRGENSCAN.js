@@ -96,7 +96,7 @@ const QRGENSCEN = () => {
  
 
 const useStyles = makeStyles((theme) => ({
-    conatiner: {
+    container: {
       marginTop: 10
     },
     title: {

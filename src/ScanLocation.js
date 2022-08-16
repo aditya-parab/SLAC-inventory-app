@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react';
-import { UseStyle } from './HookStyles';
+import {makeStyles} from '@material-ui/core';
 import { Grid } from '@material-ui/core';
 import {Typography, IconButton} from '@material-ui/core';
 import QrReader from 'react-qr-reader';
@@ -9,7 +9,7 @@ import {Button} from '@material-ui/core';
 
 
 const ScanLocation = () => {
-    const classes = UseStyle();
+    const classes = useStyles();
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
 
     const handleErrorWebCam = (error) => {
@@ -63,5 +63,26 @@ const ScanLocation = () => {
        
      );
 }
+
+
+const useStyles = makeStyles((theme) => ({
+    container: {
+      marginTop: 10
+    },
+    title: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems:  'center',
+     background: '#90030B',
+      color: '#fff',
+      padding: 20
+    },
+    btn : {
+      marginTop: 10,
+      marginBottom: 20,
+      color:"white",
+      background: '#90030B',
+    }
+}));
  
 export default ScanLocation;
