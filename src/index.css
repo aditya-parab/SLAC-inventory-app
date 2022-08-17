@@ -26,9 +26,16 @@ h3{
   padding: 20
 } 
 
+
+*{
+  margin: 0;
+  padding:0;
+}
+
 btn  {
        margin-top: 10;
   margin-bottom: 20;
   color:"white";
   background: '#90030B';
 }
+
