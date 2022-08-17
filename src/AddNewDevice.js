@@ -58,7 +58,7 @@ const classes = useStyle()
                     
                 </Grid>
                 <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>6
+                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>
                 </Grid>
 
 

@@ -73,12 +73,12 @@ const Home = () => {
                 endIcon={<MoveIcon/>}
                 href="/scanitem">
                 Move
-                </Button>
+          </Button>
+          
                 <Button 
                 variant="contained"
                 endIcon={<MapIcon/>}
                 href="/map">
-                
                 Map
                 </Button>
 

@@ -10,6 +10,7 @@ import AddNewLocation from './AddNewLocation';
 import ScanCableEnd from './ScanCableEnd';
 import ScanCableLocationStart from './ScanCableLocationStart';
 import ScanCableLocationEnd from './ScanCableLocationEnd';
+import FoundExistingItem from './FoundExistingItem';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AddNewCable from './AddNewCable';
 
@@ -30,6 +31,12 @@ function App() {
 
     <ThemeProvider theme={theme}>
   <Router>
+
+        
+                   <Switch>
+    <Route path="/foundexistingitem"> <FoundExistingItem/>  </Route>
+        </Switch>
+
 
   <Switch>
     <Route path="/scanitem"> <ScanItem></ScanItem>  </Route>
