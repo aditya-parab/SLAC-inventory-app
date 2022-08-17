@@ -26,16 +26,18 @@ const useStyle = makeStyles({
       textAlign:"center"
     },
 })
+ 
 
 
-const AddNewDevice = () => {
-const classes = useStyle()
-    return ( 
+const AddNewLocation = () => {
+    const classes = useStyle()
+    return (  
+        
         <div>
             <Grid container className={classes.container}>
 
                 <Grid item md={12}>
-<Typography className={classes.btn} variant="h2" >Add Device details</Typography>
+                    <Typography className={classes.btn} variant="h2" >Add location details</Typography>
                     <Typography className={classes.btn} variant="h4" >Upload picture and add information</Typography>
                 </Grid>
             
@@ -58,7 +60,7 @@ const classes = useStyle()
                     
                 </Grid>
                 <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>6
+                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>
                 </Grid>
 
 
@@ -66,7 +68,7 @@ const classes = useStyle()
             </Grid>
             
         </div>
-     );
+    );
 }
  
-export default AddNewDevice;
+export default AddNewLocation;

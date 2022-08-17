@@ -17,9 +17,9 @@ const AddNewItem = () => {
         </Grid> 
             <Grid container justify="center" direction="column" className={classes.container}  style={{marginTop:100}} >
                 <Box display="flex" justifyContent="space-between">
-                <Button className={classes.btn} style={{width:100, margin:"auto"}} variant="contained" >Device</Button>
-                <Button className={classes.btn} style={{width:100, margin:"auto"}}  variant="contained" >Cable</Button>
-                <Button className={classes.btn} style={{width:100, margin:"auto"}}  variant="contained" >Location</Button>
+                <Button className={classes.btn} style={{width:100, margin:"auto"}} href="/addnewdevice" variant="contained" >Device</Button>
+                <Button className={classes.btn} style={{width:100, margin:"auto"}}  href="/scancableend" variant="contained" >Cable</Button>
+                <Button className={classes.btn} style={{width:100, margin:"auto"}} href="/addnewlocation" variant="contained" >Location</Button>
                 </Box>
 
             </Grid>

@@ -6,7 +6,12 @@ import ScanLocation from './ScanLocation'
 import Success from './Success';
 import AddNewItem from './AddNewItem';
 import AddNewDevice from './AddNewDevice';
+import AddNewLocation from './AddNewLocation';
+import ScanCableEnd from './ScanCableEnd';
+import ScanCableLocationStart from './ScanCableLocationStart';
+import ScanCableLocationEnd from './ScanCableLocationEnd';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import AddNewCable from './AddNewCable';
 
 const theme = createTheme(
 {
@@ -33,15 +38,39 @@ function App() {
    <Switch>
     <Route path="/scanlocation"> <ScanLocation/>  </Route>
         </Switch>
+
+           <Switch>
+    <Route path="/scancableend"> <ScanCableEnd/>  </Route>
+        </Switch>
+
+                   <Switch>
+    <Route path="/scancablelocationstart"> <ScanCableLocationStart/>  </Route>
+        </Switch>
+
+        
+                   <Switch>
+    <Route path="/scancablelocationend"> <ScanCableLocationEnd/>  </Route>
+        </Switch>
+
+
            
         
     <Switch>
     <Route path="/addnewitem"> <AddNewItem></AddNewItem>  </Route>
         </Switch>
         
+    <Switch>
+    <Route path="/addnewcable"> <AddNewCable></AddNewCable>  </Route>
+        </Switch>
+
             <Switch>
     <Route path="/addnewdevice"> <AddNewDevice></AddNewDevice> </Route>
+        </Switch>
+        
+                    <Switch>
+    <Route path="/addnewlocation"> <AddNewLocation></AddNewLocation> </Route>
    </Switch>
+
 
 
    <Switch>

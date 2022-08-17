@@ -8,7 +8,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import {Button} from '@material-ui/core';
 
 
-const ScanLocation = () => {
+const ScanCableLocationStart = () => {
     const classes = useStyles();
     const [scanResultWebCam, setScanResultWebCam] =  useState('');
 
@@ -39,7 +39,7 @@ const ScanLocation = () => {
                 <Typography 
                 className={classes.btn} 
                 variant="h3">
-                    Scan the Location to which you want to move the item
+                    Scan the Location of Cable Start
                 </Typography>
                 <QrReader 
                         delay={300}
@@ -50,7 +50,7 @@ const ScanLocation = () => {
                         </Grid>
 
 <Grid item md={8}>
-<Button variant="contained" style={{backgroundColor:"green"}} href="/success">
+<Button variant="contained" style={{backgroundColor:"green"}} href="/scancablelocationend">
                     complete
                 </Button>
 </Grid>
@@ -81,4 +81,4 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
  
-export default ScanLocation;
+export default ScanCableLocationStart;
