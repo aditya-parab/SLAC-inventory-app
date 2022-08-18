@@ -60,7 +60,7 @@ const AddNewLocation = () => {
                     
                 </Grid>
                 <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>
+                                    <Button className={classes.btn} variant="contained" color="secondary" href="/map" >Submit</Button>
                 </Grid>
 
 

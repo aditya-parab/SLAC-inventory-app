@@ -11,6 +11,7 @@ import ScanCableEnd from './ScanCableEnd';
 import ScanCableLocationStart from './ScanCableLocationStart';
 import ScanCableLocationEnd from './ScanCableLocationEnd';
 import FoundExistingItem from './FoundExistingItem';
+import Map from '@material-ui/icons/Map';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import AddNewCable from './AddNewCable';
 
@@ -87,6 +88,11 @@ function App() {
         <Switch>
     <Route  path="/success">   <Success/> </Route>
    </Switch>
+
+
+   <Switch>
+    <Route path="/map"> <Map/>  </Route>
+        </Switch>
 
    <Switch>
     <Route exact path="/" > <Home></Home>  </Route>
