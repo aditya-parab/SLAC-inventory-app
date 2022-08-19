@@ -1,82 +1,21 @@
-import { TextField } from "@material-ui/core";
-import { Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 
-import dummyimage from './img/oscilloscope.png'
-
+import ItemCard from "./components/ItemCard";
 import { Grid } from "@material-ui/core";
-import { Card, CardContent, Box, CardMedia, CardHeader } from "@material-ui/core";
-import {IconButton} from "@material-ui/core";
-import MoveIcon from '@material-ui/icons/ZoomOutMap';
-import Edit from '@material-ui/icons/Edit'
 
 
-
-const useStyle = makeStyles({
-    field: {
-        marginTop: 20,
-        marginBottom: 20,
-        display: "block",
-        backgroundColor: "white",
-        textAlign:"center"
-    },
-    btn : {
-      marginTop: 10,
-      marginBottom: 20,
-      color:"white",
-        background: '#90030B',
-      textAlign:"center"
-    },
-        container: {
-    marginTop: 10,
-      textAlign:"center"
-    },
-})
 
 
 const FoundExistingItem = () => {
     
-const classes = useStyle()
+
     return ( 
         <div>
-            <Box width='300px' height="250px">
-                <Card>
-                    <CardHeader
-                        title="Item# 780AX5"
-                    />
-                    
+            <Grid container justify="center">
 
-                    <CardMedia
-                        component='img'
-                        height='200px'
-                        image={dummyimage}
-                        alt="dummy image"
-                    
-                    />
-                    <CardContent>
-            <Button 
-                variant="contained"
-                endIcon={<MoveIcon/>}
-                href="/scanlocation">
-                Move
-                        </Button>
-                        
-                                    <Button 
-                variant="contained"
-                endIcon={<Edit/>}
-                href="/editexistingitem">
-                Edit
-          </Button>
-                    
-                        
+            <ItemCard/>
 
+            </Grid>
 
-                        <Typography variant="body2" color="text.secondary">Id:</Typography>
-                                            <Typography variant="body2" color="text.secondary">Owned by:</Typography>
-                </CardContent>
-            </Card>
-            </Box>
 
 </div>
      );
