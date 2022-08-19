@@ -75,15 +75,16 @@ const EditExistingItem = () => {
                         </div>
 
                     
-                        <div style={{marginTop:"10px"}}>
-            <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
+                        
+         
             <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
                 <TextField className={classes.field} label="ID" variant="filled" fullWidth required></TextField>
                 <TextField className={classes.field} label="Name" variant="filled" fullWidth required></TextField>
                  <TextField className={classes.field} label="Owned by:" variant="filled" fullWidth required></TextField>
+                <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
                     </form>
-                    </form>
-                        </div>
+                
+                       
 
 
 
