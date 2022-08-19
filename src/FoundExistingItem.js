@@ -2,8 +2,11 @@ import { TextField } from "@material-ui/core";
 import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
-// import ImageUpload from "./ImageUpload";
+
+import dummyimage from './img/oscilloscope.png'
+
 import { Grid } from "@material-ui/core";
+import {Card,CardContent,Box,CardMedia} from "@material-ui/core";
 import MoveIcon from '@material-ui/icons/ZoomOutMap';
 import MapIcon from '@material-ui/icons/Map';
 
@@ -35,6 +38,35 @@ const FoundExistingItem = () => {
 const classes = useStyle()
     return ( 
         <div>
+            <Box width='300px'>
+                <Card>
+                    <CardMedia
+                        component='img'
+                        height='140'
+                        image={dummyimage}
+                        alt="dummy image"
+                    
+                    />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component='div'>ID name</Typography>
+                    <Typography variant="body2" color="text.secondary"></Typography>
+                </CardContent>
+            </Card>
+            </Box>
+
+</div>
+     );
+}
+ 
+export default FoundExistingItem;
+
+
+
+
+/*
+
+        <div>
+
             <Grid container className={classes.container}>
 
                 <Grid item md={12}>
@@ -53,7 +85,7 @@ const classes = useStyle()
                 
                 
                 <Grid item md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <img style={{ maxWidth: "250px"}} src="oscilloscope.png" />
+                    <img src={dummyimage} style={{ maxWidth: "250px"}}/>
                     
             <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
                 <Typography className={classes.btn} label="ID" >ID:</Typography>
@@ -85,8 +117,6 @@ const classes = useStyle()
             </Grid>
             
         </div>
-     );
-}
- 
-export default FoundExistingItem;
 
+
+*/
