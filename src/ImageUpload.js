@@ -37,7 +37,7 @@ class ImageUpload extends React.Component {
           
           <input id='contained-button-file' type="file" title=" "  accept='image' style={{ display: this.state.file ? "" : "" }} onChange={this.handleChange} />
           <label htmlFor="contained-button-file">
-            <Image style={{color:"#90030B", scale:"2.5"}}>
+            <Image style={{color:"#90030B", scale:"2.5", border:"solid", borderColor:"#90030B", background:"white"}}>
               
             </Image>
 
