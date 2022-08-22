@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Image from '@material-ui/icons/Image'
+import { IconButton,Button } from '@material-ui/core'
 
 const React = require('react')
 
@@ -30,10 +32,22 @@ class ImageUpload extends React.Component {
       
       return (
           
-      
+     
           <div>
+          
+          <input id='contained-button-file' type="file" title=" "  accept='image' style={{ display: this.state.file ? "" : "" }} onChange={this.handleChange} />
+          <label htmlFor="contained-button-file">
+            <Image style={{color:"#90030B", scale:"2.5"}}>
               
-        <input type="file" style={{display: this.state.file ? "none" : ""}} onChange={this.handleChange}/>
+            </Image>
+
+          </label>
+    
+
+    
+
+          
+        
 
       
               <img style={{ maxWidth: "250px" }} src={this.state.file} />
@@ -42,23 +56,4 @@ class ImageUpload extends React.Component {
     );
   } 
 }
-
-
-// const ImageUpload = () => {
-//         state = {
-//             file:null
-//     }
-//     handleChange = handleChange.bind(this)
-//     return ( 
-
-//       <div>
-//         <input type="file" onChange={this.handleChange}/>
-//         <img src={this.state.file}/>
-//       </div>
-
-
-
-//      );
-// }
- 
 export default ImageUpload;

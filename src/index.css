@@ -8,6 +8,9 @@ body {
   background-color:#232020
 }
 
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -39,3 +42,13 @@ btn  {
   background: '#90030B';
 }
 
+
+
+/*makes the choose file button disapper*/
+::-webkit-file-upload-button {
+   display: none;
+}
+
+input[type='file'] {
+  color: transparent;
+}
