@@ -44,10 +44,12 @@ const ScanItem = () => {
                         style={{width: '100%'}}
                         onError={handleErrorWebCam}
                         onScan={handleScanWebCam}
-                        />
-                <Button variant="contained" href="/scanlocation">
+                />
+                <div style={{ display: "flex", justifyContent: "center" }}>
+                    <Button variant="contained" className={classes.btn} href="/scanlocation">
                     scan location
-                </Button>
+                </Button></div>
+
             </Grid>
 
         

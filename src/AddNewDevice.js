@@ -10,9 +10,10 @@ const useStyle = makeStyles({
     field: {
         marginTop: 20,
         marginBottom: 20,
-        display: "block",
+        backgroundColor:"pink",
         backgroundColor: "white",
-        textAlign:"center"
+        textAlign: "center",
+margin:"10px"
     },
     btn : {
       marginTop: 10,
@@ -38,32 +39,39 @@ const classes = useStyle()
 <Typography className={classes.btn} variant="h2" >Add Device details</Typography>
                     <Typography className={classes.btn} variant="h4" >Upload picture and add information</Typography>
                 </Grid>
-            
-            
- 
-                <Grid item md={12}>
-
-                </Grid>            
+             
 
                 
                 
-                <Grid item md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <ImageUpload/>
+                <Grid item md={4} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <ImageUpload />
                     
-            <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
-                <TextField className={classes.field} label="ID" variant="filled" fullWidth required></TextField>
-                <TextField className={classes.field} label="Name" variant="filled" fullWidth required></TextField>
-                 <TextField className={classes.field} label="Owned by:" variant="filled" fullWidth required></TextField>
+                </Grid>
+                
+                <Grid item md={8} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <form noValidate autoComplete="off" >
+                <TextField className={classes.field} label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field} label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field} label="Owned by:" variant="filled"  required></TextField>
                     </form>
+                </Grid>
+
                     
-                </Grid>
-                <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scanlocation" >Submit</Button>
-                </Grid>
+                
+
+                                  
+
+               
+              
+
+                                       
+                                   
+              
 
 
 
             </Grid>
+            <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
             
         </div>
      );

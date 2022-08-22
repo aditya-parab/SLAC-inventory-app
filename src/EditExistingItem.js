@@ -50,7 +50,7 @@ const EditExistingItem = () => {
                     <CardMedia
                         component='img'
                         
-                        image={dummyimage}
+                        image={dummyimage} 
                         style={{height:"100%", width:"100%"}}
                         alt="dummy image"
                     
@@ -72,7 +72,7 @@ const EditExistingItem = () => {
                 href="/editexistingitem">
                 Edit
           </Button>
-                        </div>
+            </div>
 
                     
                         

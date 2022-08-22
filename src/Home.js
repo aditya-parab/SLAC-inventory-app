@@ -55,32 +55,33 @@ const Home = () => {
                         onScan={handleScanWebCam}
                         />
 
-                        <SearchBar
+          <SearchBar
+            style={{marginTop:"10px"}}
                   value={state.value}
                   onChange={(newValue) => setState({ value: newValue })}
                   onRequestSearch={() => handleSearch(state.value)}
                 />
 
+          <div style={{ display: "flex", justifyContent: "space-between"}}>
 
-                {/* <Button className="btn" 
-                variant="contained"  
-                href="/generate">
-                  Generate
-                  </Button> */}
-               
-                <Button 
+            <Button 
+            className={classes.btn}
                 variant="contained"
                 endIcon={<MoveIcon/>}
                 href="/scanitem">
                 Move
           </Button>
           
-                <Button 
+          <Button 
+            className={classes.btn}
                 variant="contained"
                 endIcon={<MapIcon/>}
                 href="/map">
                 Map
-                </Button>
+            </Button>
+          
+          </div>
+
 
                 
 
