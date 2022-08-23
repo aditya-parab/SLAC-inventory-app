@@ -32,10 +32,8 @@ const ScanLocation = () => {
          spacing={2}>
     
             <Grid item xl={4} lg={4} md={8} sm={12} xs={12} >
-            <IconButton href="/">
-                <ArrowBackIcon style={{color:"white"}}></ArrowBackIcon>
-                </IconButton>
-                
+
+                <div style={{display:"flex",alignItems:"center"}}></div>
                 <Typography 
                 className={classes.btn} 
                 variant="h3">
@@ -50,7 +48,7 @@ const ScanLocation = () => {
                         </Grid>
 
 <Grid item md={8}>
-<Button variant="contained" style={{backgroundColor:"green"}} href="/success">
+<Button variant="contained"  href="/success">
                     complete
                 </Button>
 </Grid>

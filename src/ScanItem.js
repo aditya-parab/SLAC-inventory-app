@@ -26,16 +26,12 @@ const ScanItem = () => {
 
     return ( 
         <Grid container justify = "center" spacing={2} >
-            <Grid item>
-                <IconButton href="/">
-                <ArrowBackIcon style={{color:"white"}}></ArrowBackIcon>
-                </IconButton>
-          
-            </Grid>
 
-            <Grid item xl={4} lg={4} md={8} sm={12} xs={12} >
+
+            <Grid item xl={4} lg={4} md={8} sm={12} xs={12} style={{justifyContent:"center"}} >
                 <Typography 
-                className={classes.btn}
+                    className={classes.btn}
+                    
                 variant="h3">
                     Scan the item you want to move
                 </Typography>

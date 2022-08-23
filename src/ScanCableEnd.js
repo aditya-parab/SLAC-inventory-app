@@ -32,14 +32,12 @@ const ScanCableEnd = () => {
          spacing={2}>
     
             <Grid item xl={4} lg={4} md={8} sm={12} xs={12} >
-            <IconButton href="/">
-                <ArrowBackIcon style={{color:"white"}}></ArrowBackIcon>
-                </IconButton>
+
                 
                 <Typography 
-                className={classes.btn} 
+                className={classes.title} 
                 variant="h3">
-                    Scan Cable End QR code2
+                    Scan Cable End
                 </Typography>
                 <QrReader 
                         delay={300}
@@ -49,8 +47,8 @@ const ScanCableEnd = () => {
                         />
                         </Grid>
 
-<Grid item md={8}>
-<Button variant="contained" style={{backgroundColor:"green"}} href="/addnewcable">
+<Grid item md={8} style={{marginTop:"20px"}}>
+<Button variant="contained"  href="/addnewcable">
                     complete
                 </Button>
 </Grid>

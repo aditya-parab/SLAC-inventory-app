@@ -17,13 +17,13 @@ const Success = () => {
             marginTop:20,
             width: 80,
             height: 80,
-            Color:"green"
+            color:"green"
         }
     }
     
     return ( 
 
-    <Grid container justify="center" style={{marginTop:20}}>
+    <Grid container justify="center" style={{marginTop:10, border:"solid", borderColor:"#90030B", borderWidth:"thick" }}>
         <Grid align="center" item xl={4} lg={4} md={6} sm={12} xs={12}>
             <Card >
                     <CardHeader style={classes.titlename}  title="Item was successfully added!"></CardHeader>     
