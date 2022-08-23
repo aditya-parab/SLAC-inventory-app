@@ -37,23 +37,29 @@ const classes = useStyle()
 
                 <Grid item md={12}>
 <Typography className={classes.btn} variant="h2" >Add Device details</Typography>
-                    <Typography className={classes.btn} variant="h4" >Upload picture and add information</Typography>
+                
+                    
                 </Grid>
              
 
-                
-                
-                <Grid item md={4} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <ImageUpload />
-                    
+                <Grid item md={8} sm={12} justify="right">
+  <div style={{ display: "flex", alignItems: "right",flexWrap:"wrap" }}>
+                  
+                </div>
                 </Grid>
+              
+
+                    
+                    
+                
                 
                 <Grid item md={8} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <form noValidate autoComplete="off" >
-                <TextField className={classes.field} label="ID" variant="filled"  required></TextField>
-                <TextField className={classes.field} label="Name" variant="filled"  required></TextField>
-                 <TextField className={classes.field} label="Owned by:" variant="filled"  required></TextField>
+                <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
                     </form>
+                      <ImageUpload />
                 </Grid>
 
                     
