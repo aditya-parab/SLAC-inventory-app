@@ -2,7 +2,7 @@ import { Button } from "@material-ui/core";
 import {Typography} from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { makeStyles } from '@material-ui/styles';
-import {Box} from "@material-ui/core";
+import {Box} from "@material-ui/core"
 
 const AddNewItem = () => {
     const classes = useStyles()
