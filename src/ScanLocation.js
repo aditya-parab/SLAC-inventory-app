@@ -29,11 +29,13 @@ const ScanLocation = () => {
         direction="column"
         alignItems="center"
         justify="center"
-         spacing={2}>
+            spacing={2}
+            style={{ textAlign: "center" }}
+        >
     
-            <Grid item xl={4} lg={4} md={8} sm={12} xs={12} >
+            <Grid item xl={4} lg={4} md={8} sm={12} xs={12}  >
 
-                <div style={{display:"flex",alignItems:"center"}}></div>
+
                 <Typography 
                 className={classes.btn} 
                 variant="h3">
@@ -45,7 +47,7 @@ const ScanLocation = () => {
                         onError={handleErrorWebCam}
                         onScan={handleScanWebCam}
                         />
-                        </Grid>
+                </Grid>
 
 <Grid item md={8}>
 <Button variant="contained"  href="/success">

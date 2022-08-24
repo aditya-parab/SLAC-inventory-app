@@ -25,10 +25,10 @@ const ScanItem = () => {
 
 
     return ( 
-        <Grid container justify = "center" spacing={2} >
+        <Grid container justify = "center" style={{textAlign:"center"}} spacing={2} >
 
 
-            <Grid item xl={4} lg={4} md={8} sm={12} xs={12} style={{justifyContent:"center"}} >
+            <Grid item xl={4} lg={4} md={8} sm={12} xs={12} style={{alignText:"center"}} >
                 <Typography 
                     className={classes.btn}
                     

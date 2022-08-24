@@ -32,11 +32,11 @@ const AddNewCable = () => {
 const classes = useStyle()
     return ( 
         <div>
-            <Grid container className={classes.container}>
+            <Grid container className={classes.container} justify="center">
 
                 <Grid item md={12}>
 <Typography className={classes.btn} variant="h2" >Add Cable details</Typography>
-                    <Typography className={classes.btn} variant="h4" >Upload picture and add information</Typography>
+
                 </Grid>
             
             

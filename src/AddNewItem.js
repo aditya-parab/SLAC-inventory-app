@@ -11,7 +11,7 @@ const AddNewItem = () => {
         <div>
 
             
-                    <Grid container   style={{textAlign:"center",color:"white",background:"#90030B"}} direction="column" >
+                    <Grid container style={{textAlign:"center",color:"white",background:"#90030B"}} direction="column" >
                 <Typography variant="h2">This is a new QR code.</Typography>
             <Typography  variant="h4">What do you want to add?</Typography>
         </Grid> 

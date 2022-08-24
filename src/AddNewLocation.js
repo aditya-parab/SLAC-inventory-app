@@ -10,9 +10,10 @@ const useStyle = makeStyles({
     field: {
         marginTop: 20,
         marginBottom: 20,
-        display: "block",
+        backgroundColor:"pink",
         backgroundColor: "white",
-        textAlign:"center"
+        textAlign: "center",
+margin:"10px"
     },
     btn : {
       marginTop: 10,
@@ -26,49 +27,60 @@ const useStyle = makeStyles({
       textAlign:"center"
     },
 })
- 
 
 
 const AddNewLocation = () => {
-    const classes = useStyle()
-    return (  
-        
+const classes = useStyle()
+    return ( 
         <div>
             <Grid container className={classes.container}>
 
                 <Grid item md={12}>
-                    <Typography className={classes.btn} variant="h2" >Add location details</Typography>
-                    <Typography className={classes.btn} variant="h4" >Upload picture and add information</Typography>
-                </Grid>
-            
-            
- 
-                <Grid item md={12}>
-
-                </Grid>            
-
+<Typography className={classes.btn} variant="h2" >Add Location details</Typography>
                 
-                
-                <Grid item md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <ImageUpload/>
                     
-            <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
-                <TextField className={classes.field} label="ID" variant="filled" fullWidth required></TextField>
-                <TextField className={classes.field} label="Name" variant="filled" fullWidth required></TextField>
-                 <TextField className={classes.field} label="Owned by:" variant="filled" fullWidth required></TextField>
+                </Grid>
+             
+
+                <Grid item md={8} sm={12} justify="right">
+  <div style={{ display: "flex", alignItems: "right",flexWrap:"wrap" }}>
+                  
+                </div>
+                </Grid>
+              
+
+                    
+                    
+                
+                
+                <Grid item md={8} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <form noValidate autoComplete="off" >
+                <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
                     </form>
+                      <ImageUpload />
+                </Grid>
+
                     
-                </Grid>
-                <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/map" >Submit</Button>
-                </Grid>
+                
+
+                                  
+
+               
+              
+
+                                       
+                                   
+              
 
 
 
             </Grid>
+            <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
             
         </div>
-    );
+     );
 }
  
 export default AddNewLocation;
