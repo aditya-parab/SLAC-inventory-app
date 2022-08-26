@@ -23,8 +23,8 @@ const Success = () => {
     
     return ( 
 
-    <Grid container justify="center" style={{marginTop:10, border:"solid", borderColor:"#90030B", borderWidth:"thick" }}>
-        <Grid align="center" item xl={4} lg={4} md={6} sm={12} xs={12}>
+    <Grid container justify="center" style={{marginTop:10 }}>
+        <Grid align="center" item xl={4} lg={4} md={6} sm={12} xs={12} style={{ border:"solid", borderColor:"#90030B", borderWidth:"thick"}}>
             <Card >
                     <CardHeader style={classes.titlename}  title="Item was successfully added!"></CardHeader>     
             <CheckCircleIcon  style={tempstyle.largeicon}/>        
