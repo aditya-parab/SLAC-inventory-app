@@ -3,16 +3,19 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
-import {Grid} from "@material-ui/core";
+import Image from '@material-ui/icons/CloudUpload'
+import { Grid } from "@material-ui/core";
+import {Box} from "@material-ui/core";
 
 
 const useStyle = makeStyles({
     field: {
         marginTop: 20,
         marginBottom: 20,
-        display: "block",
+        backgroundColor:"pink",
         backgroundColor: "white",
-        textAlign:"center"
+        textAlign: "center",
+margin:"10px"
     },
     btn : {
       marginTop: 10,
@@ -32,39 +35,45 @@ const AddNewCable = () => {
 const classes = useStyle()
     return ( 
         <div>
-            <Grid container className={classes.container} justify="center">
+            <Grid container className={classes.container} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 
                 <Grid item md={12}>
 <Typography className={classes.btn} variant="h2" >Add Cable details</Typography>
-
-                </Grid>
-            
-            
- 
-                <Grid item md={12}>
-
-                </Grid>            
-
                 
-                
-                <Grid item md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <ImageUpload/>
                     
-            <form noValidate autoComplete="off" style={{maxWidth:"500px"}}>
-                <TextField className={classes.field} label="ID" variant="filled" fullWidth required></TextField>
-                <TextField className={classes.field} label="Name" variant="filled" fullWidth required></TextField>
-                 <TextField className={classes.field} label="Owned by:" variant="filled" fullWidth required></TextField>
+                </Grid>
+
+
+                       <Grid container style={{display:"flex", justifyContent:"center", marginTop:"10px"}}>
+             <div style={{color:"#D9D9D9", scale:"2.5"}}> <Image/> </div> 
+        </Grid>
+                <Grid item md={8} >
+            <form noValidate autoComplete="off" >
+                <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
                     </form>
+               
+                </Grid>
+
                     
-                </Grid>
-                <Grid item md={12}>
-                                    <Button className={classes.btn} variant="contained" color="secondary" href="/scancablelocationstart" >Submit</Button>
-                </Grid>
+                
+
+                                  
+
+               
+              
+
+                                       
+                                   
+              
 
 
 
-            </Grid>
-            
+        </Grid>
+ 
+            <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
+               
         </div>
      );
 }

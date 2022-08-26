@@ -43,7 +43,7 @@ const Home = () => {
 
     return (
       
-                <Grid container className={classes.container} justify = "center" spacing={2} >
+                <Grid container className={classes.container} justify = "center"  >
                 <Grid item xl={4} lg={4} md={6} sm={12} xs={12} >
 
                   <Typography className={classes.btn} variant="h3" >Scan the Item</Typography>
@@ -56,7 +56,7 @@ const Home = () => {
                         />
 
           <SearchBar
-            style={{marginTop:"10px"}}
+           
                   value={state.value}
                   onChange={(newValue) => setState({ value: newValue })}
                   onRequestSearch={() => handleSearch(state.value)}
@@ -81,9 +81,6 @@ const Home = () => {
             </Button>
           
           </div>
-
-
-                
 
                 </Grid>
 
@@ -114,8 +111,7 @@ const useStyles = makeStyles((theme) => ({
       padding: 20
     },
     btn : {
-      marginTop: 10,
-      marginBottom: 20,
+
       color:"white",
       background: '#90030B',
     }

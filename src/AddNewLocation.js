@@ -3,7 +3,9 @@ import { Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import ImageUpload from "./ImageUpload";
-import {Grid} from "@material-ui/core";
+import Image from '@material-ui/icons/CloudUpload'
+import { Grid } from "@material-ui/core";
+import {Box} from "@material-ui/core";
 
 
 const useStyle = makeStyles({
@@ -33,33 +35,25 @@ const AddNewLocation = () => {
 const classes = useStyle()
     return ( 
         <div>
-            <Grid container className={classes.container}>
+            <Grid container className={classes.container} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 
                 <Grid item md={12}>
 <Typography className={classes.btn} variant="h2" >Add Location details</Typography>
                 
                     
                 </Grid>
-             
 
-                <Grid item md={8} sm={12} justify="right">
-  <div style={{ display: "flex", alignItems: "right",flexWrap:"wrap" }}>
-                  
-                </div>
-                </Grid>
-              
 
-                    
-                    
-                
-                
-                <Grid item md={8} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                       <Grid container style={{display:"flex", justifyContent:"center", marginTop:"10px"}}>
+             <div style={{color:"#D9D9D9", scale:"2.5"}}> <Image/> </div> 
+        </Grid>
+                <Grid item md={8} >
             <form noValidate autoComplete="off" >
                 <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
                 <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
                  <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
                     </form>
-                      <ImageUpload />
+               
                 </Grid>
 
                     
@@ -76,9 +70,10 @@ const classes = useStyle()
 
 
 
-            </Grid>
+        </Grid>
+ 
             <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
-            
+               
         </div>
      );
 }

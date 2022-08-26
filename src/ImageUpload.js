@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Image from '@material-ui/icons/Image'
-import { IconButton,Button } from '@material-ui/core'
+
+import Image from '@material-ui/icons/CloudUpload'
+
 
 const React = require('react')
 
@@ -12,7 +12,6 @@ class ImageUpload extends React.Component {
       file: null
     }
       this.handleChange = this.handleChange.bind(this)
-      this.someWords = this.someWords.bind(this)
   }
   handleChange(event) {
     this.setState({
@@ -20,13 +19,6 @@ class ImageUpload extends React.Component {
     })
     }
 
-
-    
-    someWords(){
-    if (this.state.file) {
-        return <h3 style={{color:"white", marginRight:"10px"}}>This is the image you uploaded.</h3>
-    }
-}
 
     render() {
       
@@ -37,20 +29,11 @@ class ImageUpload extends React.Component {
           
           <input id='contained-button-file' type="file" title=" "  accept='image' style={{ display:"" }} onChange={this.handleChange} />
           <label htmlFor="contained-button-file">
-            <Image style={{color:"#90030B", scale:"2.5", border:"solid", borderColor:"#90030B", background:"white",  display: this.state.file ? "none" : "" }}>
-              
+            <Image style={{color:"#D9D9D9", scale:"2.5",   display: this.state.file ? "none" : "" }}>      
             </Image>
 
           </label>
-    
-
-    
-
-          
-        
-
-      
-              <img style={{ paddingLeft:"55px", maxWidth: "200px" }} src={this.state.file} />
+              <img  src={this.state.file} />
                 
       </div>
     );
