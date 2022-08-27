@@ -46,23 +46,26 @@ const Home = () => {
                 <Grid container className={classes.container} justify = "center"  >
                 <Grid item xl={4} lg={4} md={6} sm={12} xs={12} >
 
-                  <Typography className={classes.btn} variant="h3" >Scan the Item</Typography>
+                  <Typography className={classes.title} variant="h3" >Scan the Item</Typography>
           
                         <QrReader 
                         delay={300}
-                        style={{width: '100%'}}
+                        style={{width: '100%', color:"green"}}
                         onError={handleErrorWebCam}
                         onScan={handleScanWebCam}
                         />
-
-          <SearchBar
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <SearchBar
            
                   value={state.value}
                   onChange={(newValue) => setState({ value: newValue })}
-                  onRequestSearch={() => handleSearch(state.value)}
-                />
-
-          <div style={{ display: "flex", justifyContent: "space-between"}}>
+            onRequestSearch={() => handleSearch(state.value)}
+            style={{width:"75%"}}
+            />
+            
+          </div>
+          
+<div style={{ display: "flex", justifyContent: "space-around"}}>
 
             <Button 
             className={classes.btn}
@@ -81,6 +84,7 @@ const Home = () => {
             </Button>
           
           </div>
+         
 
                 </Grid>
 
@@ -114,6 +118,7 @@ const useStyles = makeStyles((theme) => ({
 
       color:"white",
       background: '#90030B',
+      width:"25%"
     }
 }));
  

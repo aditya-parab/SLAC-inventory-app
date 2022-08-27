@@ -37,21 +37,21 @@ const classes = useStyle()
         <div>
             <Grid container className={classes.container} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 
-                <Grid item md={12}>
-<Typography className={classes.btn} variant="h2" >Add Location details</Typography>
+                {/* <Grid item md={12}> */}
+<Typography style={{background:"#90030B",color:"white"}} variant="h2" >Add Location details</Typography>
                 
                     
-                </Grid>
+                {/* </Grid> */}
 
 
-                       <Grid container style={{display:"flex", justifyContent:"center", marginTop:"10px"}}>
-             <div style={{color:"#D9D9D9", scale:"2.5"}}> <Image/> </div> 
+                       <Grid container style={{display:"flex", justifyContent:"center", marginTop:"80px"}}>
+             <div style={{color:"#D9D9D9", scale:"2.5",marginBottom:"90px", border:"solid",padding:"10px"}}> <Image/> </div> 
         </Grid>
                 <Grid item md={8} >
             <form noValidate autoComplete="off" >
-                <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
-                <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
-                 <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
+                <TextField className={classes.field}  label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field}  label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field}  label="Owned by:" variant="filled"  required></TextField>
                     </form>
                
                 </Grid>

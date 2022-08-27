@@ -37,42 +37,26 @@ const classes = useStyle()
         <div>
             <Grid container className={classes.container} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
 
-                <Grid item md={12}>
-<Typography className={classes.btn} variant="h2" >Add Device details</Typography>
+<Typography style={{background:"#90030B",color:"white"}} variant="h2">Add Device details</Typography>
                 
-                    
+        <Grid container style={{display:"flex", justifyContent:"center", marginTop:"80px"}}>
+             <div style={{color:"#D9D9D9", scale:"3",marginBottom:"80px", border:"solid",padding:"10px" ,marginTop:"30px"}}> <Image/> </div> 
                 </Grid>
 
-
-                       <Grid container style={{display:"flex", justifyContent:"center", marginTop:"10px"}}>
-             <div style={{color:"#D9D9D9", scale:"2.5"}}> <Image/> </div> 
-        </Grid>
-                <Grid item md={8} >
+        <div style={{marginTop:"70px"}}>           <Grid item md={8} >
             <form noValidate autoComplete="off" >
-                <TextField className={classes.field} fullWidth label="ID" variant="filled"  required></TextField>
-                <TextField className={classes.field} fullWidth label="Name" variant="filled"  required></TextField>
-                 <TextField className={classes.field} fullWidth label="Owned by:" variant="filled"  required></TextField>
+                <TextField className={classes.field} style={{width:"75%"}} label="ID" variant="filled"  required></TextField>
+                <TextField className={classes.field} style={{width:"75%"}} label="Name" variant="filled"  required></TextField>
+                 <TextField className={classes.field} style={{width:"75%"}} label="Owned by:" variant="filled"  required></TextField>
                     </form>
-               
                 </Grid>
 
                     
-                
-
-                                  
-
-               
-              
-
-                                       
-                                   
-              
-
-
+                  <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> </div>
 
         </Grid>
  
-            <div  style={{display:"flex", justifyContent:"center"}}><Button className={classes.btn}  variant="contained">Submit</Button></div> 
+          
                
         </div>
      );
