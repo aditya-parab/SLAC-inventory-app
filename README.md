@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Lab Equipment Management App - Stanford University
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview:
 
-## Available Scripts
+This project is a mobile-first web application developed for the SLAC National Accelerator Laboratory at Stanford University. The app is designed to help over 500 researchers and engineers manage lab equipment efficiently, reducing search times and providing real-time status updates and availability.
 
-In the project directory, you can run:
+Features:
 
-### `npm start`
+	•	Mobile-First Design: Ensures seamless accessibility on various devices.
+	•	Dynamic Dashboard: Built with React, the dashboard offers real-time equipment status and availability.
+	•	Intuitive Data Visualizations: Provides easy-to-understand visual representations of data.
+	•	High-Fidelity Prototype: Created in Figma, incorporating feedback from 11 stakeholders to ensure usability and functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ Views: 
+ <img width="219" alt="image" src="https://github.com/user-attachments/assets/0ee2e9dc-8340-4935-9cd4-d96da1c07cae">
+ <img width="227" alt="image" src="https://github.com/user-attachments/assets/15a506ba-853b-48e5-8af7-5b25f148932c">
+ <img width="245" alt="image" src="https://github.com/user-attachments/assets/b819b531-27bf-4cfa-95f3-fe7e181433a7">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+A brief overview:
+![image](https://github.com/user-attachments/assets/3f19ac8f-616a-408d-ba70-cec1e511155f)
 
-### `npm test`
+My video presentation demo:
+<iframe src="https://drive.google.com/file/d/1JMXbnRTxG6eg8W7jaoxMDXRVpOBOSFo1/preview" width="640" height="480" allow="autoplay"></iframe>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
