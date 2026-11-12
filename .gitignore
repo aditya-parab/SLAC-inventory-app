@@ -18,6 +18,13 @@
 .env.test.local
 .env.production.local
 
+# build cache / logs (machine-generated, not source)
+.eslintcache
+*.log
+
+# stray one-off files
+/sdsd.txt
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
